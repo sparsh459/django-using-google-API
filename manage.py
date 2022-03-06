@@ -7,7 +7,7 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'google_api.settings')
-    try:
+    try:    
         from django.core.management import execute_from_command_line
     except ImportError as exc:
         raise ImportError(
